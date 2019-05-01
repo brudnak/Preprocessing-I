@@ -78,6 +78,10 @@ html, body {
 	button: 1.6rem;
 }
 
+@sizes: {
+	mobile: 500px;
+}
+
 nav {
 	display: flex;
 	justify-content: flex-end;
@@ -182,4 +186,43 @@ footer {
 	font-size: @font-sizes[para];
 	color: #fff;
 	padding: 40px;
+}
+
+
+
+@media (max-width: @sizes[mobile]){
+	nav {
+		display: flex;
+		flex-direction: column;
+		a {
+			text-align: center;
+			border-bottom: 2px solid @colors[gray-medium];
+			font-size: @font-sizes[para] + 1;
+			padding: 10px 0px;
+		}
+		a:nth-of-type(4) {
+			border-bottom: none;
+		}
+	}
+
+	.top-section {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		img {
+			width: 100%;
+		}
+	}
+
+	.middle-section {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		div {
+			width: 100%;
+		}
+		div:nth-of-type(2) {
+			margin-top: 45px;
+		}
+	}
 }
