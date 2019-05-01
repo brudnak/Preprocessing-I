@@ -72,6 +72,7 @@ html, body {
 @font-sizes: {
 	navigation: 1.5rem;
 	heading-1: 4rem;
+	heading-2: 2.4rem;
 	heading-subtitle: 1.9rem;
 	para: 1.2rem;
 	button: 1.6rem;
@@ -121,4 +122,31 @@ nav {
 		padding: 10px 5px;
 		border-radius: 10px;
 	}
-}
+} // End of top-section
+
+.middle-section {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0px;
+	div {
+		width: 47%;
+	}
+	h2 {
+		font-size: @font-sizes[heading-2];
+	}
+	p {
+		margin-top: 20px;
+		font-size: @font-sizes[para];
+	}
+	ul {
+		border: 2px solid @colors[gray-medium];
+		li {
+			padding: 10px;
+			font-size: @font-sizes[para];
+			border-bottom: 2px solid @colors[gray-medium];
+		}
+		li:nth-last-child(1) {
+			border-bottom: none;
+		}
+	}
+} // End of middle-section
