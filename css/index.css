@@ -150,6 +150,9 @@ nav a {
   color: #000;
   font-size: 1.5rem;
 }
+h2 {
+  font-size: 2.4rem;
+}
 .top-section {
   display: flex;
   flex-direction: column;
@@ -191,9 +194,6 @@ nav a {
 .middle-section div {
   width: 47%;
 }
-.middle-section h2 {
-  font-size: 2.4rem;
-}
 .middle-section p {
   margin-top: 20px;
   font-size: 1.2rem;
@@ -208,4 +208,33 @@ nav a {
 }
 .middle-section ul li:nth-last-child(1) {
   border-bottom: none;
+}
+.bottom-section h2 {
+  padding-bottom: 30px;
+}
+.bottom-section table {
+  width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
+}
+.bottom-section table tr {
+  border-top: 1.6px solid #f2f2f2;
+}
+.bottom-section table tr th,
+.bottom-section table tr td {
+  padding: 15px 0px;
+}
+.bottom-section table tr th {
+  font-weight: bold;
+}
+.bottom-section table tbody tr:nth-child(odd) {
+  background-color: #e9ecef;
+}
+footer {
+  margin-top: 60px;
+  background-color: #808080;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 40px;
 }

@@ -90,6 +90,10 @@ nav {
 	}
 }
 
+h2 {
+	font-size: @font-sizes[heading-2];
+}
+
 .top-section {
 	display: flex;
 	flex-direction: column;
@@ -131,9 +135,6 @@ nav {
 	div {
 		width: 47%;
 	}
-	h2 {
-		font-size: @font-sizes[heading-2];
-	}
 	p {
 		margin-top: 20px;
 		font-size: @font-sizes[para];
@@ -150,3 +151,35 @@ nav {
 		}
 	}
 } // End of middle-section
+
+.bottom-section {
+	h2 {
+		padding-bottom: 30px;
+	}
+	table {
+		width: 100%;
+		text-align: left;
+		font-size: @font-sizes[para];
+		tr {
+			border-top: 1.6px solid @colors[gray-medium];
+			th, td {
+				padding: 15px 0px;
+			}
+			th {
+				font-weight: bold;
+			}
+		}
+		tbody tr:nth-child(odd) {
+			background-color: @colors[gray-light];
+		}
+	}
+} // End of bottom section
+
+footer {
+	margin-top: 60px;
+	background-color: @colors[gray-dark];
+	text-align: center;
+	font-size: @font-sizes[para];
+	color: #fff;
+	padding: 40px;
+}
