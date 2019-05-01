@@ -6,6 +6,10 @@ For this project you will be building a digital resume from scratch. You will be
 
 Andrew Brudnak
 
+## Mobile Navigation
+
+![Image of mobile navigation](https://i.imgur.com/03n22BD.png)
+
 ## Task 1: Set Up The Project With Git
 
 - [x] Create a forked copy of this project.
