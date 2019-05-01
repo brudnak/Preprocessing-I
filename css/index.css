@@ -260,6 +260,9 @@ footer {
   .top-section img {
     width: 100%;
   }
+  .top-section h1 {
+    font-size: 3rem;
+  }
   .middle-section {
     display: flex;
     flex-direction: column;
