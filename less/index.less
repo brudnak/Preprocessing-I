@@ -82,6 +82,12 @@ html, body {
 	mobile: 500px;
 }
 
+// mixins
+.display-column {
+	display: flex;
+	flex-direction: column;
+}
+
 nav {
 	display: flex;
 	justify-content: flex-end;
@@ -99,8 +105,7 @@ h2 {
 }
 
 .top-section {
-	display: flex;
-	flex-direction: column;
+	.display-column();
 	background-color: @colors[gray-light];
 	padding: 5% 3%;
 	h1 {
@@ -192,8 +197,7 @@ footer {
 
 @media (max-width: @sizes[mobile]){
 	nav {
-		display: flex;
-		flex-direction: column;
+		.display-column();
 		a {
 			text-align: center;
 			border-bottom: 2px solid @colors[gray-medium];
@@ -206,8 +210,7 @@ footer {
 	}
 
 	.top-section {
-		display: flex;
-		flex-direction: column;
+		.display-column();
 		align-content: center;
 		img {
 			width: 100%;
@@ -218,8 +221,7 @@ footer {
 	}
 
 	.middle-section {
-		display: flex;
-		flex-direction: column;
+		.display-column();
 		align-content: center;
 		div {
 			width: 100%;

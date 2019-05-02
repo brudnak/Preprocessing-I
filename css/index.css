@@ -139,6 +139,10 @@ body {
   width: 90%;
   margin: 0 auto;
 }
+.display-column {
+  display: flex;
+  flex-direction: column;
+}
 nav {
   display: flex;
   justify-content: flex-end;
